@@ -6,13 +6,7 @@
 
     <form method="POST" action="">
         {% csrf_token %}
-        <!-- {{form}} -->
-        <form action="post">
-            <div>
-                <label for=""></label>
-                <option name=""  value=""></option>
-            </div>
-        </form>
+        {{form.as_p}}
 
         <input type="submit" value="submit">
     </form>
